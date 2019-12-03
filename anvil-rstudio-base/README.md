@@ -10,6 +10,8 @@ This document provides background on the [RStudio](https://rstudio.com/products/
 
 ## RStudio Docker Contents
 
+Teh AnVIL Rstudio Image can be accessed using this URL: us.gcr.io/anvil-gcr-public/anvil-rstudio-base:0.0.1
+
 ### Base Image
 
 * [rocker/tidyverse](https://hub.docker.com/r/rocker/tidyverse/)
@@ -26,7 +28,6 @@ This document provides background on the [RStudio](https://rstudio.com/products/
 * bigrquery
 * DataBiosphere/Ronaldo
 
-
 ### Customizations
 
 * Disabled RStudio login screen
@@ -36,7 +37,12 @@ This document provides background on the [RStudio](https://rstudio.com/products/
 
 ## Saving RStudio Data
 
+Code and data generated in Terra RStudio will not be saved. Below are three suggestions for saving your work.
+
 ### Copying RStudio work to a workspace google bucket
+
+
+
 ### Downloading RStudio files to local computer
 ### Checking code into GitHub
 
