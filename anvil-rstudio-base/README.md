@@ -2,9 +2,9 @@
 | --- | --- | --- |
 | 0.0.1 | 10/06/2019 | Adrian Sharma: adrian@broadinstitute.org |
 
-# AnVIL RStudio Image in Terra
+# AnVIL RStudio Docker Image
 
-This document provides background on the RStudio Docker and using the image in Terra. Unlike the currently existing Terra base images (link), RStudio is not hosted in a Jupyter Notebook; any work performed in Terra RStudio will not be saved. Instructions and suggestions are provided at the end of this document for saving RStudio code. 
+This document provides background on the [RStudio](https://rstudio.com/products/rstudio/) Docker Image and how to use it in the cloud-based platform [Terra](app.terra.bio). Unlike the currently existing [Terra base images](https://github.com/DataBiosphere/terra-docker#terra-base-images), RStudio is not hosted in a Jupyter Notebook; any work performed in Terra RStudio will not be saved. Instructions and suggestions are provided at the end of this document for saving RStudio code. 
 
 ## Table of Contents
 
