@@ -10,7 +10,7 @@ This document provides background on the [RStudio](https://rstudio.com/products/
 
 ## RStudio Docker Contents
 
-Teh AnVIL Rstudio Image can be accessed using this URL: us.gcr.io/anvil-gcr-public/anvil-rstudio-base:0.0.1
+The AnVIL Rstudio Image can be accessed using this URL: us.gcr.io/anvil-gcr-public/anvil-rstudio-base:0.0.1
 
 ### Base Image
 
