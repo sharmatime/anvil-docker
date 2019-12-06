@@ -48,3 +48,5 @@ Code and data generated in Terra RStudio will not be saved. Below are three sugg
 ### Checking code into GitHub
 
 ## Versioning
+
+All updates and changes to the current docker image are listed in the Rstudio image [CHANGELOG.md file](CHANGELOG.md). 
