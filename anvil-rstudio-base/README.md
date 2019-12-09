@@ -25,7 +25,7 @@ The AnVIL Rstudio Image can be accessed using the following URL: us.gcr.io/anvil
 
 ### Base Image
 
-The base image for the AnVIL RSutio Docker is the [rocker/tidyverse](https://hub.docker.com/r/rocker/tidyverse/) image provided by the [Rocker Project](https://www.rocker-project.org/). This image contains tidyverse and devtools.
+The base image for the AnVIL RSutio Docker is the [rocker/tidyverse](https://hub.docker.com/r/rocker/tidyverse/) image provided by the [Rocker Project](https://www.rocker-project.org/). This image additionally contains tidyverse and devtools.
 
 
 ### Applications
