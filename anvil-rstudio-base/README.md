@@ -7,6 +7,15 @@
 [Rstudio](https://rstudio.com/products/rstudio/) is an integrated development environment to support the R statistical programming language. The AnVIL RStudio Docker is a version-tagged image of RStudio, providing consistent RStudio software, packages, and dependencies with every use. This document describes the [RStudio](https://rstudio.com/products/rstudio/) Docker Image and how to use it in the cloud-based platform [Terra](app.terra.bio). Unlike the currently existing [Terra base images](https://github.com/DataBiosphere/terra-docker#terra-base-images), RStudio is not hosted in a Jupyter Notebook; any work performed in Terra RStudio will not be saved. At the end of this document, you will find Instructions and suggestions for saving RStudio data and code. 
 
 ## Table of Contents
+- [RStudio Docker Contents](#rstudio-docker-contents)
+  * [Accessing the AnVIL RStudio Image](#accessing-the-anvil-rstudio-image)
+  * [Base Image](#base-image)
+  * [Applications](#applications)
+  * [Libraries](#libraries)
+  * [Customizations](#customizations)
+- [Using R Studio in Terra](#using-r-studio-in-terra)
+- [Saving RStudio Data](#saving-rstudio-data)
+- [Versioning](#versioning)
 
 ## RStudio Docker Contents
 
@@ -40,7 +49,9 @@ The AnVIL RStudio image is customized to disable the RStudio login screen. Futur
 * RStudio hooks to refresh credentials 
 * An RStudio pause after inactivity
 
-## Using R Studio in Terra
+## Using RStudio in Terra
+
+Detailed instuctions on accessing the AnVIL RStudio image can be found in the "[Working with project-specific images](https://broadinstitute.zendesk.com/knowledge/articles/360037269472)" documentation in Terra support.
 
 ## Saving RStudio Data
 
