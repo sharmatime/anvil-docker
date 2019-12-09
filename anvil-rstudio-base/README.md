@@ -4,35 +4,41 @@
 
 # AnVIL RStudio Docker Image
 
-This document provides background on the [RStudio](https://rstudio.com/products/rstudio/) Docker Image and how to use it in the cloud-based platform [Terra](app.terra.bio). Unlike the currently existing [Terra base images](https://github.com/DataBiosphere/terra-docker#terra-base-images), RStudio is not hosted in a Jupyter Notebook; any work performed in Terra RStudio will not be saved. At the end of this document, you will find Instructions and suggestions for saving RStudio data and code. 
-
+[Rstudio](https://rstudio.com/products/rstudio/) is an integrated development environment that includes a console and a suite of tools to support the R statistical programming language. The AnVIL RStudio Docker is a version-tagged image, providing consistent RStudio software, packages, and dependencies with every use. This document provides background on the [RStudio](https://rstudio.com/products/rstudio/) Docker Image and how to use it in the cloud-based platform [Terra](app.terra.bio). Unlike the currently existing [Terra base images](https://github.com/DataBiosphere/terra-docker#terra-base-images), RStudio is not hosted in a Jupyter Notebook; any work performed in Terra RStudio will not be saved. At the end of this document, you will find Instructions and suggestions for saving RStudio data and code. 
 
 ## Table of Contents
 
 ## RStudio Docker Contents
 
-The AnVIL Rstudio Image can be accessed using this URL: us.gcr.io/anvil-gcr-public/anvil-rstudio-base:0.0.1
+### Accessing the AnVIL RStudio Image
+
+The AnVIL Rstudio Image can be accessed using the following URL: us.gcr.io/anvil-gcr-public/anvil-rstudio-base:0.0.1. 
 
 ### Base Image
 
-* [rocker/tidyverse](https://hub.docker.com/r/rocker/tidyverse/)
+The base image for the AnVIL RSutio Docker is the [rocker/tidyverse](https://hub.docker.com/r/rocker/tidyverse/) image provided by the [Rocker Project](https://www.rocker-project.org/). This image contains tidyverse and devtools.
+
 
 ### Applications
 
-* [RStudio Server](https://www.rstudio.com/products/rstudio-server/)
+The AnVIL R Docker contains the [RStudio Server](https://www.rstudio.com/products/rstudio-server/) application which supports a web browser version of RStudio. 
 
 ### Libraries
 
-* tidyverse
-* google-cloud-sdk
-* googleCloudStorageR
-* bigrquery
-* DataBiosphere/Ronaldo
+The following packages are pre-loaded in the AnVIL RStudio image:
+
+* [tidyverse](https://www.tidyverse.org/packages/): a suite of packages desigend for data sciences 
+* [google-cloud-sdk](https://cloud.google.com/sdk/): tools for the google cloud platform
+* [googleCloudStorageR](http://code.markedmondson.me/googleCloudStorageR/): an R library for interacting with google cloud storage
+* [bigrquery](https://github.com/r-dbi/bigrquery): a package to allow interaction with Google's BigQuery
+* DataBiosphere/Ronaldo: a package of functions commonly used for R Notebooks created from Leonardo
 
 ### Customizations
 
-* Disabled RStudio login screen
-* TODO: RStudio hooks to refresh credentials and pause on inactivity
+The AnVIL RStudio image is customized to disable the RStudio login screen. Future customizations will include:
+
+* RStudio hooks to refresh credentials 
+* An RStudio pause after inactivity
 
 ## Using R Studio in Terra
 
