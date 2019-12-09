@@ -58,7 +58,7 @@ Detailed instuctions on accessing the AnVIL RStudio image can be found in the "[
 Code and data generated in Terra RStudio will not be saved. Below are three suggestions for saving your work.
 
 1. Copying RStudio work to a workspace google bucket
-2. Downloading RStudio files to local computer
+2. Downloading RStudio files to your local computer
 3. Checking code into GitHub
 
 ## Versioning
