@@ -40,7 +40,7 @@ The following packages are pre-loaded in the AnVIL RStudio image:
 * [google-cloud-sdk](https://cloud.google.com/sdk/): tools for the google cloud platform
 * [googleCloudStorageR](http://code.markedmondson.me/googleCloudStorageR/): an R library for interacting with google cloud storage
 * [bigrquery](https://github.com/r-dbi/bigrquery): a package to allow interaction with Google's BigQuery
-* DataBiosphere/Ronaldo: a package of functions commonly used for R Notebooks created from Leonardo
+* [DataBiosphere/Ronaldo](https://github.com/DataBiosphere/Ronaldo): a package of functions commonly used for R Notebooks created from Leonardo
 
 ### Customizations
 
