@@ -46,12 +46,9 @@ The AnVIL RStudio image is customized to disable the RStudio login screen. Futur
 
 Code and data generated in Terra RStudio will not be saved. Below are three suggestions for saving your work.
 
-### Copying RStudio work to a workspace google bucket
-
-
-
-### Downloading RStudio files to local computer
-### Checking code into GitHub
+1. Copying RStudio work to a workspace google bucket
+2. Downloading RStudio files to local computer
+3. Checking code into GitHub
 
 ## Versioning
 
