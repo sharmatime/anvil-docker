@@ -61,7 +61,7 @@ Code and data generated in Terra RStudio will not be saved. Below are three sugg
 
 Use the [gsutil](https://cloud.google.com/storage/docs/gsutil) tool to copy files to your workspace google bucket. The "[Working with project-specific images](https://broadinstitute.zendesk.com/knowledge/articles/360037269472)" documentation in Terra support demonstrates how to identify the url for a workspace google bucket. After identifying the workspace google bucket url, you can copy files to a google bucket using the bash command: 
 
-'!gsutil cp ./* gs://GoogleBucketURL'
+    !gsutil cp ./* gs://GoogleBucketURL
 
 ### 2. Downloading RStudio files to your local computer
 Once your files are copied to workspace google bucket, you can access them by selecting the Data tab of the workspace and choosing the Files option on bottom left. This will display the files available in your google bucket. By selecting a file, you can download it directly. Additionally, [this Terra support document](https://support.terra.bio/hc/en-us/articles/360029251091-Broad-Genomics-Downloading-data-from-a-Terra-workspace) details alternative techniques you can use to download data files. 
