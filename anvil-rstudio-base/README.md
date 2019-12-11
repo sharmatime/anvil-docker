@@ -25,7 +25,7 @@ The AnVIL Rstudio Image can be accessed using the following URL: us.gcr.io/anvil
 
 ### Base Image
 
-The base image for the AnVIL RSutio Docker is the [rocker/tidyverse](https://hub.docker.com/r/rocker/tidyverse/) image provided by the [Rocker Project](https://www.rocker-project.org/). This image additionally contains tidyverse and devtools.
+The base image for the AnVIL RStudio Docker is the [rocker/tidyverse](https://hub.docker.com/r/rocker/tidyverse/) image provided by the [Rocker Project](https://www.rocker-project.org/). This image additionally contains tidyverse and devtools.
 
 
 ### Applications
@@ -36,7 +36,7 @@ The AnVIL R Docker contains the [RStudio Server](https://www.rstudio.com/product
 
 The following packages are pre-loaded in the AnVIL RStudio image:
 
-* [tidyverse](https://www.tidyverse.org/packages/): a suite of packages desigend for data sciences 
+* [tidyverse](https://www.tidyverse.org/packages/): a suite of packages designed for data sciences 
 * [google-cloud-sdk](https://cloud.google.com/sdk/): tools for the google cloud platform
 * [googleCloudStorageR](http://code.markedmondson.me/googleCloudStorageR/): an R library for interacting with google cloud storage
 * [bigrquery](https://github.com/r-dbi/bigrquery): a package to allow interaction with Google's BigQuery
@@ -51,7 +51,7 @@ The AnVIL RStudio image is customized to disable the RStudio login screen. Futur
 
 ## Using RStudio in Terra
 
-Detailed instuctions on accessing the AnVIL RStudio image can be found in the "[Working with project-specific images](https://broadinstitute.zendesk.com/knowledge/articles/360037269472)" documentation in Terra support.
+Detailed instructions on accessing the AnVIL RStudio image can be found in the "[Working with project-specific images](https://broadinstitute.zendesk.com/knowledge/articles/360037269472)" documentation in Terra support.
 
 ## Saving RStudio Data
 
@@ -59,16 +59,18 @@ Code and data generated in Terra RStudio will not be saved. Below are three sugg
 
 ### 1. Copying RStudio work to a workspace google bucket
 
-Use the [gsutil](https://cloud.google.com/storage/docs/gsutil) tool to copy files to your workspace google bucket. The "[Working with project-specific images](https://broadinstitute.zendesk.com/knowledge/articles/360037269472)" documentation in Terra support demonstrates how to identify the url for a workspace google bucket. After identifying the workspace google bucket url, you can copy files to the a google bucket using the bash command: 
+Use the [gsutil](https://cloud.google.com/storage/docs/gsutil) tool to copy files to your workspace google bucket. The "[Working with project-specific images](https://broadinstitute.zendesk.com/knowledge/articles/360037269472)" documentation in Terra support demonstrates how to identify the url for a workspace google bucket. After identifying the workspace google bucket url, you can copy files to a google bucket using the bash command: 
 
 '!gsutil cp ./* gs://GoogleBucketURL'
 
 ### 2. Downloading RStudio files to your local computer
-Once your files are copied to workspace google bucket, you can access them by selecting the Data tab of the workspace and choosing the Files option on bottom left. This will display the files available in your google bucket. By selecting a file, you download it directly. Additionally, [this Terra support document](https://support.terra.bio/hc/en-us/articles/360029251091-Broad-Genomics-Downloading-data-from-a-Terra-workspace) details alternative techniques you can use to download data files. 
+Once your files are copied to workspace google bucket, you can access them by selecting the Data tab of the workspace and choosing the Files option on bottom left. This will display the files available in your google bucket. By selecting a file, you can download it directly. Additionally, [this Terra support document](https://support.terra.bio/hc/en-us/articles/360029251091-Broad-Genomics-Downloading-data-from-a-Terra-workspace) details alternative techniques you can use to download data files. 
 
 ### 3. Checking code into GitHub
-You can install Git on RStudio and use it to [check code into GitHub](https://help.github.com/en/github/importing-your-projects-to-github). 
+You can install Git on RStudio and use it to [check code into GitHub](https://help.github.com/en/github/importing-your-projects-to-github). 
 
 ## Versioning
 
 All updates and changes to the current docker image are listed in the Rstudio image [CHANGELOG.md file](CHANGELOG.md). 
+
+
