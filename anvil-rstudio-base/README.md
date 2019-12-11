@@ -57,9 +57,17 @@ Detailed instuctions on accessing the AnVIL RStudio image can be found in the "[
 
 Code and data generated in Terra RStudio will not be saved. Below are three suggestions for saving your work.
 
-1. Copying RStudio work to a workspace google bucket
-2. Downloading RStudio files to your local computer
-3. Checking code into GitHub
+### 1. Copying RStudio work to a workspace google bucket
+
+Use the [gsutil](https://cloud.google.com/storage/docs/gsutil) tool to copy files to your workspace google bucket. The "[Working with project-specific images](https://broadinstitute.zendesk.com/knowledge/articles/360037269472)" documentation in Terra support demonstrates how to identify the url for a workspace google bucket. After identifying the workspace google bucket url, you can copy files to the a google bucket using the bash command: 
+
+'!gsutil cp ./* gs://GoogleBucketURL'
+
+### 2. Downloading RStudio files to your local computer
+Once your files are copied to workspace google bucket, you can access them by selecting the Data tab of the workspace and choosing the Files option on bottom left. This will display the files available in your google bucket. By selecting a file, you download it directly. Additionally, [this Terra support document](https://support.terra.bio/hc/en-us/articles/360029251091-Broad-Genomics-Downloading-data-from-a-Terra-workspace) details alternative techniques you can use to download data files. 
+
+### 3. Checking code into GitHub
+You can install Git on RStudio and use it to [check code into GitHub](https://help.github.com/en/github/importing-your-projects-to-github). 
 
 ## Versioning
 
