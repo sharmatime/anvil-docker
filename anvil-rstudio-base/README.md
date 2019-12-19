@@ -71,6 +71,6 @@ You can install Git on RStudio and use it to [check code into GitHub](https://he
 
 ## Versioning
 
-All updates and changes to the current docker image are listed in the Rstudio image [CHANGELOG.md file](CHANGELOG.md). 
+All updates and changes to the current Docker image are listed in the Rstudio image [CHANGELOG.md file](CHANGELOG.md). 
 
 
